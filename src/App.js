@@ -2,7 +2,7 @@ import React from 'react';
 import {Link, Route, Redirect} from 'react-router-dom';
 // import logo from './logo.svg';
 // import './App.css';
-import Home from './Home';
+import Home from './containers/Home/Home';
 
 const App = () => (
   <div>
