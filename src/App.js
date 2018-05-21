@@ -1,22 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Link, Route, Redirect} from 'react-router-dom';
+// import logo from './logo.svg';
+// import './App.css';
+import Home from './Home';
 
-class App extends Component {
-   render() {
-
-    return(
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome</h1>
-        </header>
-        <p className="App-sub-header">
-          My Site is Currently Under Construction Please Check Back at a Later Date
-        </p>
-      </div>
-    );
-   }
-}
+const App = () => (
+  <div>
+    <Redirect from="/" to="/Home"/>
+    <nav>
+      <Link to="/Home">Home</Link>
+    </nav>
+    <div>
+      <Route path="/Home" component={Home}/>
+    </div>
+  </div>
+)
 
 export default App;
