@@ -1,12 +1,9 @@
 import React from 'react';
-import logo from '../../assets/logo.svg';
-import '../../App.css';
 
-const Home = () => (
+const Work = () => (
     <div className="App">
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome</h1>
+            <h1 className="App-title">Work</h1>
         </header>
         <p className="App-sub-header">
             My Site is Currently Under Construction Please Check Back at a Later Date
@@ -14,4 +11,4 @@ const Home = () => (
     </div>
 )
 
-export default Home;
+export default Work;
