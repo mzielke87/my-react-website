@@ -4,7 +4,7 @@ import Home from './Home/Home';
 import Work from './Work/Work';
 
 const Toolbar = () => (    
-    <div>
+    <Aux>
         <nav>
             <Link to="/Home">Home</Link>
             <Link to="/Work">Work</Link>
@@ -13,7 +13,7 @@ const Toolbar = () => (
             <Route path="/Home" component={Home}/>
             <Route path="/Work" component={Work}/>
         </div>
-    </div>
+    </Aux>
 )
 
 export default Toolbar;

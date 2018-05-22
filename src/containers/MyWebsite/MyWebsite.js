@@ -4,14 +4,14 @@ import Toolbar from '../../components/Toolbar/Toolbar';
 import Footer from '../../components/Footer/Footer';
 
 const MyWebsite = () => (
-    <div>
+    <Aux>
         {/* redirects all traffic to home */}
         <Redirect from="/" to="/Home"/>
 
         <Toolbar />
 
         <Footer />
-    </div>
+    </Aux>
 )
 
 export default MyWebsite;
