@@ -2,6 +2,7 @@ import React from 'react';
 import {Link, Route} from 'react-router-dom';
 import Home from './Home/Home';
 import Work from './Work/Work';
+import Aux from '../../hoc/Auxx';
 
 const Toolbar = () => (    
     <Aux>
