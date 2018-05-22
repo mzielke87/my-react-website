@@ -8,13 +8,13 @@ class Layout extends Component {
     constructor(props){
         super(props);
         this.state = {
-            navClicked: false
+            currentNav: 'none'
         }
     }
     
-    navClicked = () => {
+    navClicked = (page) => {
         this.setState({
-            navClicked: true
+            currentNav: page
         });
     };
 
@@ -23,10 +23,10 @@ class Layout extends Component {
 
         return (
             <Aux>
-                <Toolbar linkClicked={this.navClicked}/>
+                <Toolbar linkClicked={this.navClicked} currentNav={this.state.currentNav}/>
 
                 {/* <main>{this.props.children}</main> */}
-                <main>{React.cloneElement(this.props.children, { navClicked: this.state.navClicked })}</main>
+                <main>{React.cloneElement(this.props.children, { currentNav: this.state.currentNav })}</main>
                 
                 <Footer />
             </Aux>

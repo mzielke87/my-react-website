@@ -34,13 +34,9 @@
     color: black;
 }
 
-.main{
-    margin-top: 66px;
-}
-
-.Logo {
+/* .Logo {
     height: 80%;
-}
+} */
 
 @media (max-width: 499px) {
     .DesktopOnly {
