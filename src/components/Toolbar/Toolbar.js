@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import Work from './Work/Work';
 import Aux from '../../hoc/Auxx/Auxx';
 import Logo from '../Logo/Logo';
+import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
 import './Toolbar.css';
 
 const Toolbar = (props) => (    
@@ -12,9 +13,12 @@ const Toolbar = (props) => (
             <div className='Logo'>
                 <Logo/>
             </div>
-            <nav>
+            {/* <nav className='Nav'>
                 <Link to="/Home" onClick={props.linkClicked}>Home</Link>
                 <Link to="/Work" onClick={props.linkClicked}>Work</Link>
+            </nav> */}
+            <nav className='Nav'>
+                <NavigationItems />
             </nav>
         </header>
         <div className='main'>
