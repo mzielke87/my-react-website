@@ -1,18 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
-import Toolbar from '../../components/Toolbar/Toolbar';
-import Footer from '../../components/Footer/Footer';
-import Aux from '../../hoc/Auxx';
+// import Toolbar from '../../components/Toolbar/Toolbar';
+// import Footer from '../../components/Footer/Footer';
+import Aux from '../../hoc/Auxx/Auxx';
 
-const MyWebsite = () => (
-    <Aux>
-        {/* redirects all traffic to home */}
-        <Redirect from="/" to="/Home"/>
+class MyWebsite extends Component {
+    render () {
+        return (
+            <Aux>
+                {/* redirects all traffic to home page*/}
 
-        <Toolbar />
+                {this.props.navClicked ? null : <Redirect from="/" to="/Home"/>}
 
-        <Footer />
-    </Aux>
-)
+                {/* <Toolbar />
+
+                <Footer /> */}
+            </Aux>
+        );
+    }
+}
 
 export default MyWebsite;

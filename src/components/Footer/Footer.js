@@ -1,6 +1,6 @@
 import React from 'react';
 import LinkedInLogo from '../../assets/In-2C-28px-R.png';
-import Aux from '../../hoc/Auxx';
+import Aux from '../../hoc/Auxx/Auxx';
 
 const linkedInLogoPadding = {
     padding: '2px'
