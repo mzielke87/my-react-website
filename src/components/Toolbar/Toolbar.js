@@ -10,7 +10,7 @@ import './Toolbar.css';
 const Toolbar = (props) => (    
     <Aux>
         <header className='Toolbar'>
-            <div className='Logo'>
+            <div>
                 <Logo />
             </div>
             {/* <nav className='Nav'>

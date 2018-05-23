@@ -4,6 +4,8 @@ import Footer from '../../components/Footer/Footer';
 import Aux from '../Auxx/Auxx';
 import './Layout.css';
 
+import Headroom from 'react-headroom';
+
 class Layout extends Component {
     constructor(props){
         super(props);
@@ -23,7 +25,9 @@ class Layout extends Component {
 
         return (
             <Aux>
-                <Toolbar linkClicked={this.navClicked} currentNav={this.state.currentNav}/>
+                <Headroom>
+                    <Toolbar linkClicked={this.navClicked} currentNav={this.state.currentNav}/>
+                </Headroom>
 
                 {/* <main>{this.props.children}</main> */}
                 <main>{React.cloneElement(this.props.children, { currentNav: this.state.currentNav })}</main>
