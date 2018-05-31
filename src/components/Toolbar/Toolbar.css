@@ -10,7 +10,7 @@
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 90;
-    background-color: crimson;
+    background-color: var(--tertiaryColor);
 }
 
 .Nav {
@@ -19,7 +19,7 @@
 }
 
 .Nav a {
-    color: black;
+    color: var(--secondaryColor);
     text-decoration: none;
     height: 100%;
     padding: 10px;
@@ -30,9 +30,9 @@
 
 .Nav a:hover,
 .Nav a:active {
-    background-color: black;
-    border-bottom: #40A4C8;
-    color: white;
+    background-color: var(--primaryColor);
+    border-bottom: var(--secondaryColor);
+    color: var(--secondaryColor);
 }
 
 @media (max-width: 499px) {

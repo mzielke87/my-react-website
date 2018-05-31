@@ -2,6 +2,7 @@ import React from 'react';
 import '../../../App.css';
 
 const Home = () => (
+    
     <div className="App">
         <header className="App-header">
             <h1 className="App-title">Welcome</h1>

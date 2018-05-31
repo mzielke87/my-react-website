@@ -7,7 +7,7 @@ const Work = () => (
             <h1 className="App-title">Work</h1>
         </header>
         <p className="App-sub-header">
-            Currently Under Construction Please Check Back at a Later Date
+            You guessed it, under construction here too
         </p>
     </div>
 )

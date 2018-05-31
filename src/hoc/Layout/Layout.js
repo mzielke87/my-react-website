@@ -18,7 +18,8 @@ class Layout extends Component {
         this.setState({
             currentNav: page
         });
-    };
+        window.scrollTo(0, 0);
+    };    
 
     render () {
         const main = this.state.navClicked ? null : <main>{this.props.children}</main>;
