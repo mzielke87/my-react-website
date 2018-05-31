@@ -16,7 +16,8 @@ class MyWebsite extends Component {
 
                 {this.props.currentNav !== 'none' ? null : <Redirect from="/" to="/Home"/>}
 
-                <div className='main'>
+                {/* <div className='main'> */}
+                <div >
                     <Route path="/Home" component={Home}/>
                     <Route path="/Work" component={Work}/>
                 </div>

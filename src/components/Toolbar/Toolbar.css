@@ -30,9 +30,9 @@
 
 .Nav a:hover,
 .Nav a:active {
-    background-color: #8F5C2C;
+    background-color: black;
     border-bottom: #40A4C8;
-    color: black;
+    color: white;
 }
 
 @media (max-width: 499px) {
