@@ -1,18 +1,19 @@
 import React from 'react';
 import '../../../App.css';
 
-const Work = () => (
+const Projects = () => (
+    
     <div className="App">
         <header className="App-header">
-            <h1 className="App-title">Work</h1>
+            <h1 className="App-title">Projects</h1>
         </header>
         <p className="App-sub-header">
-            You guessed it, under construction here too
+            This one too!
         </p>
         <div className="App-body">
-
+            {/* include links to all work on github with description for each */}
         </div>
     </div>
 )
 
-export default Work;
+export default Projects;

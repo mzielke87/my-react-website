@@ -10,6 +10,9 @@ const Home = () => (
         <p className="App-sub-header">
             Currently Under Construction Please Check Back at a Later Date
         </p>
+        <div className="App-body">
+
+        </div>
     </div>
 )
 

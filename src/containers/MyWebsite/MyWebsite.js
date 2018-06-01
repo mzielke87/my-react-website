@@ -5,6 +5,7 @@ import {Redirect} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import Home from '../../components/Toolbar/Home/Home';
 import Work from '../../components/Toolbar/Work/Work';
+import Projects from '../../components/Toolbar/Projects/Projects';
 import Aux from '../../hoc/Auxx/Auxx';
 import './MyWebsite.css';
 
@@ -13,13 +14,13 @@ class MyWebsite extends Component {
         return (
             <Aux>
                 {/* redirects all traffic to home page*/}
-
                 {this.props.currentNav !== 'none' ? null : <Redirect from="/" to="/Home"/>}
 
                 {/* <div className='main'> */}
                 <div >
                     <Route path="/Home" component={Home}/>
                     <Route path="/Work" component={Work}/>
+                    <Route path="/Projects" component={Projects}/>
                 </div>
 
                 {/* <Toolbar />
