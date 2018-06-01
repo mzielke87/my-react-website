@@ -6,12 +6,13 @@ phases:
             # - pip install Pygments
             # - wget https://github.com/gohugoio/hugo/releases/download/v0.21/hugo_0.21_Linux-64bit.deb
             # - dpkg -i hugo_0.21_Linux-64bit.deb
+            - npm install
     build:
         commands:
             # - hugo
             - npm run build
             - echo "S3 Upload Beginning"
-            - aws s3 sync public/ s3://matthewzielke.com/build --region us-east-1 --delete --acl public-read
+            - aws s3 sync build/ s3://matthewzielke.com/build --region us-east-1 --delete --acl public-read
             - echo "S3 Upload Complete"
 
     post_build:
