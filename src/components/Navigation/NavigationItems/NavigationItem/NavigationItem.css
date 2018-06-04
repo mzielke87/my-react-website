@@ -21,19 +21,19 @@
 
 @media (min-width: 500px) { */
     .NavigationItem {
-        margin: 0;
-        display: flex;
+        /* margin: 0; */
+        /* display: flex; */
         height: 100%;
-        width: auto;
-        align-items: center;
+        /* width: auto; */
+        /* align-items: center; */
     }
     
-    .NavigationItem a {
+    /* .NavigationItem a {
         color: white;
         height: 100%;
         padding: 16px 10px;
         border-bottom: 4px solid transparent;
-    }
+    } */
     
     /* .NavigationItem a:hover, */
     .NavigationItem a:active,
@@ -41,5 +41,9 @@
         background-color: var(--secondaryColor);
         border-bottom: 4px solid var(--tertiaryColor);
         color: var(--primaryColor);
+        -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+        -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+        box-shadow: inset 0px 0px 5px #c1c1c1;
+        outline: none;
     }
 /* } */
