@@ -13,8 +13,7 @@ class App extends Component {
 
   componentWillMount() {
     this.unlisten = this.props.history.listen((location, action) => {
-      console.log("[on route change]\n " + "location pathname: " + location.pathname + "\n action: " + action);   
-      if(action != null && action != 'REPLACE'){
+      if(action !== null && action !== 'REPLACE'){
         this.routeChanged(location.pathname);   
       }      
     });
