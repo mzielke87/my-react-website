@@ -6,6 +6,7 @@ import './Layout.css';
 
 import Headroom from 'react-headroom';
 
+let navClicked = false;
 class Layout extends Component {
     constructor(props){
         super(props);
@@ -13,13 +14,23 @@ class Layout extends Component {
             currentNav: 'none'
         }
     }
-
+    
     navClicked = (page) => {
+        navClicked = true;
         this.setState({
             currentNav: page
         });
         window.scrollTo(0, 0);
     };
+
+    routeChanged (path) {
+        if(!navClicked){
+            this.setState({
+                currentNav: path.slice(1).toLowerCase()
+            });
+        }        
+        navClicked = false;        
+    }
 
     render () {
         const main = this.state.navClicked ? null : <main>{this.props.children}</main>;
