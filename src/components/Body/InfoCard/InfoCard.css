@@ -1,0 +1,31 @@
+.card-title {
+    font-size: 1.5em;
+}
+
+.card-sub-header {
+    font-size: medium;    
+}
+
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px var(--tertiaryColor), 8px 8px #aaaaaa;
+    height: 300px;
+    width: 500px;
+    margin: 2rem;
+}
+
+@media(max-width: 600px){
+    .card {
+        width: 400px;
+    }
+}
+
+@media(max-width: 500px){
+    .card {
+        width: 300px;
+    }
+}
+
+.card-link {
+    text-decoration: none;
+}

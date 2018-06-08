@@ -11,7 +11,7 @@ const logoPadding = {
 const Footer = () => (
     <Aux>        
         <div className="footer">
-        <div className="footer-item">
+            <div className="footer-item">
                 {/* <div className="footer-text">Follow my GitHub</div> */}
                 <a href="https://github.com/mzielke87" target="_blank" rel="noopener noreferrer">
                     <img style={logoPadding} src={GitHubLogo} alt="Go to my GitHub Profile!" width="32" height="32" border="0"/>

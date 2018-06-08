@@ -13,18 +13,10 @@ const Toolbar = (props) => (
             <div>
                 <Logo />
             </div>
-            {/* <nav className='Nav'>
-                <Link to="/Home" onClick={props.linkClicked}>Home</Link>
-                <Link to="/Work" onClick={props.linkClicked}>Work</Link>
-            </nav> */}
             <nav className='Nav'>
                 <NavigationItems linkClicked={props.linkClicked} currentNav={props.currentNav}/>
             </nav>
         </header>
-        {/* <div className='main'>
-            <Route path="/Home" component={Home}/>
-            <Route path="/Work" component={Work}/>
-        </div> */}
     </Aux>
 )
 

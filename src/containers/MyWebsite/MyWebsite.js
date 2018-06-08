@@ -16,16 +16,11 @@ class MyWebsite extends Component {
                 {/* redirects all traffic to home page*/}
                 {this.props.currentNav !== 'none' ? null : <Redirect from="/" to="/Home"/>}
 
-                {/* <div className='main'> */}
-                <div >
+                <div>
                     <Route path="/Home" component={Home}/>
                     <Route path="/Work" component={Work}/>
                     <Route path="/Projects" component={Projects}/>
                 </div>
-
-                {/* <Toolbar />
-
-                <Footer /> */}
             </Aux>
         );
     }

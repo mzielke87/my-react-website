@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Toolbar from '../../components/Toolbar/Toolbar';
-import Footer from '../../components/Footer/Footer';
+// import Footer from '../../components/Footer/Footer';
 import Aux from '../Auxx/Auxx';
 import './Layout.css';
 
@@ -13,13 +13,13 @@ class Layout extends Component {
             currentNav: 'none'
         }
     }
-    
+
     navClicked = (page) => {
         this.setState({
             currentNav: page
         });
         window.scrollTo(0, 0);
-    };    
+    };
 
     render () {
         const main = this.state.navClicked ? null : <main>{this.props.children}</main>;
@@ -30,10 +30,9 @@ class Layout extends Component {
                     <Toolbar linkClicked={this.navClicked} currentNav={this.state.currentNav}/>
                 </Headroom>
 
-                {/* <main>{this.props.children}</main> */}
                 <main>{React.cloneElement(this.props.children, { currentNav: this.state.currentNav })}</main>
-                
-                <Footer />
+
+                {/* <Footer /> */}
             </Aux>
         );
     }

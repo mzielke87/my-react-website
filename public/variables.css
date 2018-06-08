@@ -3,3 +3,8 @@
     --secondaryColor: #ffffff;
     --tertiaryColor: #990000;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}

@@ -2,7 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 24px; */
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    border-top: solid 1px #ddd;
+    background-color: var(--secondaryColor);
 }
 
 .footer-item {
