@@ -32,7 +32,8 @@ class InfoCard extends Component {
                         <div className="card-body">
                             {this.props.body}
                         </div>
-                        <a className="card-link" href={this.props.link} target="_blank" rel="noopener noreferrer">See this projects repository</a>
+                        {this.props.link != null && 
+                        <a className="card-link" href={this.props.link} target="_blank" rel="noopener noreferrer">See this projects repository</a>}
                     </div>
                 </Pulse>
             </div>
