@@ -41,7 +41,7 @@ class Layout extends Component {
                     <Toolbar linkClicked={this.navClicked} currentNav={this.state.currentNav}/>
                 </Headroom>
 
-                <main>{React.cloneElement(this.props.children, { currentNav: this.state.currentNav })}</main>
+                <main style={{display: 'flex', justifyContent: 'center'}}>{React.cloneElement(this.props.children, { currentNav: this.state.currentNav })}</main>
 
                 {/* <Footer /> */}
             </Aux>
