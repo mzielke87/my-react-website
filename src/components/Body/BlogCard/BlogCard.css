@@ -1,0 +1,50 @@
+.blog-card-title {
+    font-size: 1.5em;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.blog-card-body:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.blog-card-body {
+    margin: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444;
+    max-height: 195px;
+    overflow: hidden;
+
+    position: relative;
+    line-height: 24px;
+}
+
+.blog-card-body:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+}
+
+.blog-card {
+    height: 200px;
+    width: calc(100vw - 30rem);
+    min-width: 15rem;
+    margin: 2rem;
+    position: relative;    
+}
+
+.blog-card-link {
+    margin: 5px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}

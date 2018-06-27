@@ -1,7 +1,4 @@
 import React from 'react';
-// import {Link, Route} from 'react-router-dom';
-// import Home from './Home/Home';
-// import Work from './Work/Work';
 import Aux from '../../hoc/Auxx/Auxx';
 import Logo from '../Logo/Logo';
 import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
