@@ -24,12 +24,11 @@
     height: 300px;
     width: 500px;
     margin: 2rem;
-    position: relative;
 }
 
 .card:hover {
     box-shadow: 2px 2px var(--primaryColor), 8px 8px #aaaaaa;
-    filter: blur(.4px);
+    /* filter: blur(.4px); */
 }
 
 @media(max-width: 600px){

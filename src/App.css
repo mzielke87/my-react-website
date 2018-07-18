@@ -37,7 +37,7 @@
 
 .App-header {
   /* background-color: var(--primaryColor); */
-  height: 150px;
+  height: 75px;
   padding: 20px;
   /* color: var(--primaryColor); */
   color: var(--secondaryColor);
@@ -50,7 +50,7 @@
 .App-sub-header {
   font-size: large;
   color: #939393;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .container {
@@ -63,4 +63,24 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.sliding-pane-container {
+  max-width: 500px;
+}
+
+.sliding-pane-container .slide-pane__header {
+  background-color: #ffffff;
+}
+
+.sliding-pane-container .slide-pane__title {
+  color: var(--secondaryColor);
+}
+
+.sliding-pane-container .slide-pane__content {
+  color: var(--secondaryColor);
+}
+
+.sliding-pane-overlay {
+  z-index: 999999;
 }
