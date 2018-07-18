@@ -12,6 +12,7 @@
     z-index: 90;
     border-bottom: 1px solid #ddd;
     /* background-color: var(--secondaryColor); */
+    background-color: #ffffff;
 }
 
 .Nav {
