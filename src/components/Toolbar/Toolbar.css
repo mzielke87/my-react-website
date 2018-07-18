@@ -11,7 +11,7 @@
     box-sizing: border-box;
     z-index: 90;
     border-bottom: 1px solid #ddd;
-    background-color: var(--secondaryColor);
+    /* background-color: var(--secondaryColor); */
 }
 
 .Nav {
@@ -20,7 +20,8 @@
 }
 
 .Nav a {
-    color: var(--primaryColor);
+    /* color: var(--primaryColor); */
+    color: #000000;
     text-decoration: none;
     height: 100%;
     padding: 10px;

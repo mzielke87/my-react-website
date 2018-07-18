@@ -1,6 +1,7 @@
 import React from 'react';
 
-import myLogo from '../../assets/logo.svg';
+// import myLogo from '../../assets/logo.svg';
+import myLogo from '../../assets/MZ_logo1.png';
 import './Logo.css';
 
 const logo = (props) => (

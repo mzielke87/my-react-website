@@ -1,7 +1,13 @@
-:root{
+/* :root{
     --primaryColor: #000000;
     --secondaryColor: #ffffff;
     --tertiaryColor: #990000;
+} */
+
+:root{
+    --primaryColor: #FF9E00;
+    --secondaryColor: #FF0000;
+    --tertiaryColor: #3BEEC6;
 }
 
 * {

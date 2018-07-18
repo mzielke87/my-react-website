@@ -38,7 +38,8 @@
   /* background-color: var(--primaryColor); */
   height: 150px;
   padding: 20px;
-  color: var(--primaryColor);
+  /* color: var(--primaryColor); */
+  color: var(--secondaryColor);
 }
 
 .App-title {
@@ -52,9 +53,10 @@
 }
 
 .container {
-  min-height: calc(100vh - 70px);
+  /* min-height: calc(100vh - 70px); */
+  min-height: calc(100vh - 16px);
   position: relative;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
 }
 
 @keyframes App-logo-spin {

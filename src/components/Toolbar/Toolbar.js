@@ -8,7 +8,7 @@ const Toolbar = (props) => (
     <Aux>
         <header className='Toolbar'>
             <div>
-                <Logo />
+                <Logo height={35}/>
             </div>
             <nav className='Nav'>
                 <NavigationItems linkClicked={props.linkClicked} currentNav={props.currentNav}/>
