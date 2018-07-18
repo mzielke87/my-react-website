@@ -19,7 +19,7 @@ class MyWebsite extends Component {
 
                 <div>
                     <Route path="/Home" component={Home}/>
-                    <Route path="/Work" component={Work}/>
+                    {/* <Route path="/Work" component={Work}/> */}
                     <Route path="/Projects" component={Projects}/>
                     <Route path="/Blog" component={Blog}/>
                 </div>
