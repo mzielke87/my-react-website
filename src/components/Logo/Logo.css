@@ -5,10 +5,10 @@
     border-radius: 5px;
 }
 
-.Logo:hover{
+/* .Logo:hover{
     cursor: pointer;
     opacity: 0.5;
-}
+} */
 
 .Logo img {
     height: 100%;

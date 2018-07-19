@@ -15,6 +15,16 @@
     background-color: #ffffff;
 }
 
+.hamburger {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .Nav {
     height: 100%;
     display: flex;

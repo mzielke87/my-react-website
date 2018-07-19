@@ -7,7 +7,8 @@ import './Toolbar.css';
 const Toolbar = (props) => (    
     <Aux>
         <header className='Toolbar'>
-            <div>
+            <div className='hamburger'>
+                <i className="fa fa-bars" aria-hidden="true"></i>
                 <Logo height={35} logoClicked={props.logoClicked}/>
             </div>
             <nav className='Nav'>
