@@ -6,3 +6,12 @@
     margin: 2rem;
     position: relative;
 }
+
+.contact-profile-pic-container {
+    padding-top: 8px;
+}
+
+.contact-profile-pic {
+    height: 120px;
+    width: 150px;
+}
