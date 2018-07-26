@@ -56,9 +56,11 @@
 
 .container {
   /* min-height: calc(100vh - 70px); */
-  min-height: calc(100vh - 16px);
+  /* min-height: calc(100vh - 16px); */
+  min-height: calc(100vh);
   position: relative;
   /* padding-bottom: 70px; */
+  background-color: antiquewhite;
 }
 
 @keyframes App-logo-spin {
