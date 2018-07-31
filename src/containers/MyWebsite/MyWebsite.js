@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Redirect} from 'react-router-dom';
+// import {Redirect} from 'react-router-dom';
 // import Toolbar from '../../components/Toolbar/Toolbar';
 // import Footer from '../../components/Footer/Footer';
 import {Route} from 'react-router-dom';
@@ -16,11 +16,12 @@ class MyWebsite extends Component {
         return (
             <Aux>
                 {/* redirects all traffic to home page*/}
-                {this.props.currentNav !== 'none' ? null : <Redirect from="/" to="/Projects"/>}
+                {/* {this.props.currentNav !== 'none' ? null : <Redirect from="/" to="/Projects"/>} */}
 
                 <div>
                     {/* <Route path="/Home" component={Home}/> */}
                     {/* <Route path="/Work" component={Work}/> */}
+                    <Route path="/" exact component={Projects}/>
                     <Route path="/Projects" component={Projects}/>
                     {/* <Route path="/Blog" component={Blog}/> */}
                     <Route path="/Contact" component={Contact}/>

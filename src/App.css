@@ -60,7 +60,7 @@
   min-height: calc(100vh);
   position: relative;
   /* padding-bottom: 70px; */
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 @keyframes App-logo-spin {
