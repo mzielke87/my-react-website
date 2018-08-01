@@ -1,7 +1,7 @@
 import React from 'react';
 
-import LinkedInLogo from '../../../assets/In-2C-28px-R.png';
-import GitHubLogo from '../../../assets/GitHub-Mark-32px.png';
+// import LinkedInLogo from '../../../assets/In-2C-28px-R.png';
+// import GitHubLogo from '../../../assets/GitHub-Mark-32px.png';
 
 import './Contact.css';
 import '../../../App.css';
@@ -31,12 +31,14 @@ const Contact = () => (
             <div className="contact-footer">
                 <div className="contact-footer-border">
                     <a href="https://github.com/mzielke87" target="_blank" rel="noopener noreferrer">
-                        <img style={marginRight} src={GitHubLogo} alt="Go to my GitHub Profile!" width="32" height="32" border="0"/>
+                        {/* <img style={marginRight} src={GitHubLogo} alt="Go to my GitHub Profile!" width="32" height="32" border="0"/> */}
+                        <img style={marginRight} src={process.env.PUBLIC_URL + '/assets/GitHub-Mark-32px.png'} alt="Go to my GitHub Profile!" width="32" height="32" border="0"/>
                     </a>
                 </div>
                 <div >
                     <a href="https://www.linkedin.com/in/matthew-zielke-a8a607128/" target="_blank" rel="noopener noreferrer">
-                        <img style={marginLeft} src={LinkedInLogo} alt="Go to my LinkedIn Profile!" width="37" height="28" border="0"/>
+                        {/* <img style={marginLeft} src={LinkedInLogo} alt="Go to my LinkedIn Profile!" width="37" height="28" border="0"/> */}
+                        <img style={marginLeft} src={process.env.PUBLIC_URL + '/assets/In-2C-28px-R.png'} alt="Go to my LinkedIn Profile!" width="37" height="28" border="0"/>
                     </a>
                 </div>
             </div>

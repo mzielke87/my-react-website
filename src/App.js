@@ -8,7 +8,7 @@ import Layout from './hoc/Layout/Layout';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
-import myProfile from './assets/cropped-profile.svg';
+// import myProfile from './assets/cropped_profile.png';
 
 class App extends Component {
   constructor(props) {
@@ -57,7 +57,8 @@ class App extends Component {
           onRequestClose={() => this.setState({isPaneOpen: false})}>
           <div className="my-profile-container">
             <h1 className="my-profile-title">Hello!</h1>
-            <img className="my-profile" src={myProfile} alt="MyProfile"/>
+            {/* <img className="my-profile" src={myProfile} alt="MyProfile"/> */}
+            <img className="my-profile" src={process.env.PUBLIC_URL + '/assets/cropped-profile.png'} height="150" width="150" alt="myProfile"/>
           </div>
           <br/>
           <p>I am Software Engineer with experience in full stack web development.</p>
