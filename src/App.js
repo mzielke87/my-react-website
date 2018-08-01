@@ -8,6 +8,8 @@ import Layout from './hoc/Layout/Layout';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
+import myProfile from './assets/cropped_profile.png';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -53,14 +55,17 @@ class App extends Component {
           title='Matthew Zielke'
           from='left'
           onRequestClose={() => this.setState({isPaneOpen: false})}>
-          <h1>Hello!</h1>
+          <div className="my-profile-container">
+            <h1 className="my-profile-title">Hello!</h1>
+            <img className="my-profile" src={myProfile} alt="MyProfile"/>
+          </div>
           <br/>
-          <p>I am Software Engineer with experience in web development.</p>
+          <p>I am Software Engineer with experience in full stack web development.</p>
             <br/>
-            <p>I am always open to a project that will help further my knowledge.</p>
+            <p>I enjoy learning and am always open to a project that will further my knowledge.</p>
             <br/>
-            <p>Currently I am working as a Full Stack Software Engineer at Buxton Co in Fort Worth, Texas.</p>
-            <br/>
+            <p>Currently I am working as a Software Engineer at Buxton Co in Fort Worth, Texas.</p>
+            <br/>          
         </SlidingPane>
         <Footer />
       </div>

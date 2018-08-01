@@ -12,7 +12,7 @@ const Projects = () => (
         <div className="App-body">
             <InfoCard title={'Project Iris'} 
                       subheader={'Gaze tracking software (C++)'} 
-                      body={'This was my senior design project while attending UTA. Me and 3 other students developed this software to work in conjunction with an Intel RealSense SR300 camera to effectively track your gaze position on a computer screen as well as use that gaze position to help you select letters with a cursor on the screen to "type" hands free.'} 
+                      body={'This was my senior design project while attending UTA. A team of 4 developed this software to work in conjunction with an Intel RealSense SR300 camera to effectively track your gaze position on a computer screen as well as use that gaze position to help you select letters with a cursor on the screen to "type" hands free.'} 
                       link={'https://github.com/mzielke87/Project-Iris'}/>
             <InfoCard title={'Student Course Scheduling'} 
                       subheader={'Course scheduling Android app (Java)'} 
