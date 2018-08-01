@@ -8,7 +8,7 @@ import Layout from './hoc/Layout/Layout';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
-import myProfile from './assets/cropped_profile.png';
+import myProfile from './assets/cropped-profile.svg';
 
 class App extends Component {
   constructor(props) {
