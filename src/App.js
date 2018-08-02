@@ -58,7 +58,7 @@ class App extends Component {
           <div className="my-profile-container">
             <h1 className="my-profile-title">Hello!</h1>
             {/* <img className="my-profile" src={myProfile} alt="MyProfile"/> */}
-            <img className="my-profile" src={process.env.PUBLIC_URL + '/assets/cropped-profile.png'} height="150" width="150" alt="myProfile"/>
+            <img className="my-profile" src={process.env.PUBLIC_URL + '/assets/cropped-profile.png'} alt="myProfile"/>
           </div>
           <br/>
           <p>I am Software Engineer with experience in full stack web development.</p>
