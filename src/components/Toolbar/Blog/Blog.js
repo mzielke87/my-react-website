@@ -16,6 +16,6 @@ const Blog = () => (
                       link="no"/>
         </div>
     </div>
-)
+);
 
 export default Blog;

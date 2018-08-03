@@ -19,6 +19,6 @@ const Home = () => (
             <br/>
         </div>
     </div>
-)
+);
 
 export default Home;

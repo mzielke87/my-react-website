@@ -12,7 +12,7 @@ class Layout extends Component {
         super(props);
         this.state = {
             currentNav: 'none'
-        }
+        };
     }
     
     navClicked = (page) => {
@@ -28,6 +28,7 @@ class Layout extends Component {
             this.setState({
                 currentNav: path.slice(1).toLowerCase()
             });
+            console.log('currentNav: ' + this.state.currentNav);
         }        
         navClicked = false;        
     }

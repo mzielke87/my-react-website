@@ -8,7 +8,7 @@ class InfoCard extends Component {
         super(props);
         this.state = {
             visible: false
-        }
+        };
     }
 
     onChange = (isVisible) => {
@@ -32,12 +32,12 @@ class InfoCard extends Component {
                         <div className="card-body">
                             {this.props.body}
                         </div>
-                        {this.props.link != null && 
+                        {this.props.link !== null && 
                         <a className="card-link" href={this.props.link} target="_blank" rel="noopener noreferrer">See this projects repository</a>}
                     </div>
                 </Pulse>
             </div>
-        )
+        );
     }
 }
 

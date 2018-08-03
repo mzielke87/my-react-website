@@ -16,6 +16,6 @@ const Toolbar = (props) => (
             </nav>
         </header>
     </Aux>
-)
+);
 
 export default Toolbar;

@@ -25,14 +25,15 @@ class App extends Component {
         this.routeChanged(location.pathname);   
       }      
     });
-  }
-  componentWillUnmount() {
-      this.unlisten();
-  }
+  }  
 
   componentDidMount() {
     Modal.setAppElement(this.el);
   }
+
+  componentWillUnmount() {
+    this.unlisten();
+}
 
   routeChanged = (path) => {
     this.child.current.routeChanged(path);

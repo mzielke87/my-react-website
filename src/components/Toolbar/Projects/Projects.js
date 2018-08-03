@@ -24,6 +24,6 @@ const Projects = () => (
                       link={'https://github.com/mzielke87/My-Projects/tree/master/OOP%20Project'}/>
         </div>
     </div>
-)
+);
 
 export default Projects;
