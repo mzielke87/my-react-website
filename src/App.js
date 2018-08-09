@@ -64,7 +64,8 @@ class App extends Component {
           <br/>
           <p>I am Software Engineer with experience in full stack web development.</p>
             <br/>
-            <p>I enjoy learning and am always open to a project that will further my knowledge.</p>
+            <p>I enjoy learning and am always open to a project that will further my knowledge. 
+              This website for example was built as a way to teach myself React and a few AWS services used to host and serve it. </p>
             <br/>
             <p>Currently I am working as a Software Engineer at Buxton Co in Fort Worth, Texas.</p>
             <br/>          
