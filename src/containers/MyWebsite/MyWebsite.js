@@ -1,32 +1,24 @@
 import React, {Component} from 'react';
-// import {Redirect} from 'react-router-dom';
-// import Toolbar from '../../components/Toolbar/Toolbar';
-// import Footer from '../../components/Footer/Footer';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 // import Home from '../../components/Toolbar/Home/Home';
 // import Work from '../../components/Toolbar/Work/Work';
 import Projects from '../../components/Toolbar/Projects/Projects';
 // import Blog from '../../components/Toolbar/Blog/Blog';
 import Contact from '../../components/Toolbar/Contact/Contact';
-import Aux from '../../hoc/Auxx/Auxx';
 import './MyWebsite.css';
 
-class MyWebsite extends Component {
-    render () {
+class MyWebsite extends Component {    
+    render () {        
         return (
-            <Aux>
-                {/* redirects all traffic to home page*/}
-                {/* {this.props.currentNav !== 'none' ? null : <Redirect from="/" to="/Projects"/>} */}
-
-                <div>
-                    {/* <Route path="/Home" component={Home}/> */}
-                    {/* <Route path="/Work" component={Work}/> */}
-                    <Route path="/" exact component={Projects}/>
-                    <Route path="/Projects" component={Projects}/>
-                    {/* <Route path="/Blog" component={Blog}/> */}
-                    <Route path="/Contact" component={Contact}/>
-                </div>
-            </Aux>
+            <Switch>
+                {/* <Route path="/Home" component={Home}/> */}
+                {/* <Route path="/Work" component={Work}/> */}
+                <Route path="/" exact component={Projects}/>
+                <Route path="/Projects" component={Projects}/>
+                {/* <Route path="/Blog" component={Blog}/> */}
+                <Route path="/Contact" component={Contact}/>
+                <Route render={() => <div className='notFoundStyle'><h1>Why you do dis?</h1><img className='notFoundImageStyle' src={process.env.PUBLIC_URL + '/assets/angry.png'} alt="WHY!?"/></div>}/>
+            </Switch>
         );
     }
 }

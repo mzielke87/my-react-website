@@ -1,3 +1,14 @@
 .main{
     min-height: 100%;
 }
+
+.notFoundStyle  {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.notFoundImageStyle  {
+    height: 200px;
+    padding-top: 30px;
+}
