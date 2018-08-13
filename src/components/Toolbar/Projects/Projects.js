@@ -10,6 +10,10 @@ const Projects = () => (
         </header>
         <p className="App-sub-header"></p>
         <div className="App-body">
+        <InfoCard title={'This Website'} 
+                      subheader={'My personal website (React)'}
+                      body={'My static website built using React, React Router and AWS. Using AWS CodeCommit, CodeBuild and CodePipline to implement CI/CD.'}
+                      link={'https://github.com/mzielke87/my-react-website'}/>
             <InfoCard title={'Project Iris'} 
                       subheader={'Gaze tracking software (C++)'} 
                       body={'My senior design project at UTA. A team of 4 developed this to work in conjunction with an Intel RealSense SR300 camera to track your gaze position on a computer screen as well as use that gaze position to help you select letters with a cursor to "type" hands free.'} 
